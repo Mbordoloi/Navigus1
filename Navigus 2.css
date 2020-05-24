@@ -1,0 +1,101 @@
+Body{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://ak.picdn.net/shutterstock/videos/1023421687/thumb/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+    position: sticky;
+    top: 0;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+
+}
+
+li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+li a:hover {
+    background-color: rgb(133, 133, 137);
+}
+li a:hover:not(.active) {
+    background-color: rgb(133, 133, 137) ;
+}
+.active {
+    background-color: maroon;
+}
+h1{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    color:aliceblue;
+  }
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button[type=submit] {
+    width: 100%;
+    background-color: rgb(192, 209, 39);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center
+}
+
+button[type=submit]:hover {
+    background-color: rgb(58, 32, 32);
+}
+
+.form{
+    border-radius: 5px;
+    background-color: gainsboro;
+    padding: 20px;
+    margin: 100px 400px;
+}
+.login{
+    text-align: center;
+    font-size: 30px
+}

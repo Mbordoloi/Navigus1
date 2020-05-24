@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<title>form</title>
+<link rel="stylesheet" href="Navigus%202.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+</style>
+    
+    
+<script>
+function validateform(){  
+var name1=document.myform.firstname.value; 
+var name2=document.myform.lastname.value; 
+var psd1=document.myform.password1.value;
+var psd2=document.myform.password2.value;
+var email1=document.myform.email.value;  
+var email2= email1.indexOf("@");  
+var email3=email1.lastIndexOf(".");  
+
+  
+if (name1==null || name1=="")
+{  
+  alert("Firstname can't be blank");  
+  return false;  
+}
+else if(name2==null || name2=="")
+{
+    alert("Lastname can't be blank");
+    return false;
+}
+else if(email2<1 || email3<email2+2 || email3+2>=x.length)
+{  
+  alert("Please enter a valid e-mail address");  
+  return false;  
+}
+else if((psd1.length<6) || (psd2.length<6))
+{  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+} 
+else 
+{
+    if(psd1==psd2)
+    {
+    return true;    
+    }
+    else
+    {
+      alert("password must be same!");   
+      return false;
+    }
+}    
+}
+</script>
+    
+    
+</head>
+<body>
+    <ul>
+  <li><a class="active" href="C:\Coaching\ExternelCSS Project\FRONTPAGE\HTML.html">HOME</a></li>
+  <li><a href="#news">NEWS</a></li>
+  <li><a href="C:\Coaching\ExternelCSS Project\CONTACT FORM\contact.html">CONTACT</a></li>
+  <li><a href="C:\Coaching\ExternelCSS Project\ABOUT US FORM\About us.html">ABOUT</a></li>
+    <li style="float: right"><a href="C:\Coaching\ExternelCSS Project\Login Form\LOGIN.html">LOG IN</a></li>
+    <li style="float: right"><a href="C:\Coaching\ExternelCSS Project\LOGIN AND SIGNUP FORM\Forms.html">SIGN UP</a></li>
+    </ul>
+    
+     <h1> SELECT YOUR SLOT TODAY!!</h1>
+    
+<div class="form">
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >
+<label for="fname">FIRST NAME</label>
+    <br>
+<input type="text" id="fname" name="firstname" placeholder="YOUR FIRST NAME IS...">
+    <br>
+<label for="lname">LAST NAME</label>
+    <br>
+<input type="text" id="fname" name="lastname" placeholder="YOUR LAST NAME IS...">
+    <br>
+<label for="slot">SLOT</label>
+<select id="country" name="country">
+<option value="slot1">10:00-11:00</option>
+<option value="slot2">11:00-12:00</option>
+    <br>
+<option value="slot1">12:00-13:00</option>
+<option value="slot2">13:00-14:00</option>
+<option value="slot3">14:00-15:00</option>
+<option value="slot4">15:00-16:00</option>
+</select>
+    <br>
+     <label for="gender">GENDER</label>
+    <br>
+    <input type="radio" name="gender" value="male" checked>MALE<br>
+    <input type="radio" name="gender" value="female">FEMALE<br>
+    <input type="radio" name="gender" value="Others">OTHERS
+    <br>
+    <label for="Email">EMAIL</label>
+    <br>
+    <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL ADDRESS...">
+    <br>
+   <label for="password">PASSWORD</label>
+    <br>
+     <input type="password" name="password1" id="Password" placeholder="ENTER YOUR PASSWORD...">
+    <br>
+    <label for="password">CONFIRM PASSWORD</label>
+    <br>
+     <input type="password" name="password2" id="Password" placeholder="ENTER YOUR PASSWORD AGAIN...">
+    <br>
+    <button type="submit">REGISTER</button>
+
+</form>
+    <p1 class="login"> Already a member?Go to<a href="C:\Coaching\ExternelCSS Project\Login Form\LOGIN.html" style="color: red">Log in</a></p1>
+</div>
+if($_GET)
+<?php
+echo"HI $_GET['fname']";
+?>
+</body>
+</html>
